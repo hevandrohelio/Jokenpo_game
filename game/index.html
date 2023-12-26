@@ -1,0 +1,53 @@
+<!-- https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Jokenpô</h1>
+    <div class="container">
+        <strong>
+            <p class="score" id="player-score">Player: 0</p>
+        </strong><strong>
+            <p class="score" id="engine-score">Engine: 0</p>
+        </strong>
+    </div>
+    <section class="container">
+        <div class="choice">
+            <h2>Selecione uma opção</h2>
+            <div class="container">
+                <button type="button" id="pedra" onclick="jogar('pedra')"><img src="data/imgs/Stone.webp"
+                        alt="Pedra"></button>
+                <button type="button" id="papel" onclick="jogar('papel')"><img src="data/imgs/Paper.webp"
+                        alt="Papel"></button>
+                <button type="button" id="tesoura" onclick="jogar('tesoura')"><img src="data/imgs/Shears.webp"
+                        alt="Tesoura"></button>
+            </div>
+        </div>
+    </section>
+    <section id="result" style="display: none;">
+        <div class="container">
+            <div>
+                <img id="stonep" src="data/imgs/Stone.webp">
+                <img id="paperp" src="data/imgs/Paper.webp">
+                <img id="scissorsp" src="data/imgs/Shears.webp">
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png">
+            <div>
+                <img id="stonee" src="data/imgs/Stone.webp">
+                <img id="papere" src="data/imgs/Paper.webp">
+                <img id="scissorse" src="data/imgs/Shears.webp">
+            </div>
+        </div>
+        <h3 id="victory"></h3>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
